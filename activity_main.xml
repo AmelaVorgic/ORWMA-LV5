@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <Button
+        android:id="@+id/btnInspiration"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/inspo"
+        android:textColor="@color/babypink"
+        android:onClick="btnInspirationClick"/>
+
+    <TextView
+        android:id="@+id/tvTOP3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btnInspiration"
+        android:textAlignment="center"
+        android:background="@color/babypink"
+        android:text="@string/top"
+        android:textColor="@color/dark_gray"
+        android:outlineSpotShadowColor="@color/dark_gray"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/ivMarie"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnInspiration"
+        android:contentDescription="@string/marie"
+        android:src="@drawable/marie"
+        android:onClick="IvMarieClick"/>
+
+
+    <TextView
+        android:id="@+id/tvMarieCurie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInspiration"
+        android:layout_toRightOf="@id/ivMarie"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/marie"
+        android:textSize="20dp"
+        android:textColor="@color/babypink"
+        />
+
+    <TextView
+        android:id="@+id/tvDatesMarie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMarieCurie"
+        android:layout_toRightOf="@id/ivMarie"
+        android:layout_marginLeft="10dp"
+        android:text="@string/datesMarie"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvaboutMarie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDatesMarie"
+        android:layout_toRightOf="@id/ivMarie"
+        android:layout_marginLeft="10dp"
+        android:text="@string/aboutMarie"
+        android:textSize="17dp"
+        android:textColor="@color/dark_gray"
+        />
+
+    <ImageView
+        android:id="@+id/ivAmelia"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/ivMarie"
+        android:contentDescription="@string/amelia"
+        android:src="@drawable/amelia"
+        android:onClick="IvAmeliaClick"/>/>
+
+    <TextView
+        android:id="@+id/tvAmeliaEarhart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMarie"
+        android:layout_toRightOf="@id/ivAmelia"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/amelia"
+        android:textSize="20dp"
+        android:textColor="@color/babypink"
+        />
+
+    <TextView
+        android:id="@+id/tvDatesAmelia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAmeliaEarhart"
+        android:layout_toRightOf="@id/ivAmelia"
+        android:layout_marginLeft="10dp"
+        android:text="@string/datesAmelia"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvaboutAmelia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDatesAmelia"
+        android:layout_toRightOf="@id/ivAmelia"
+        android:layout_marginLeft="10dp"
+        android:text="@string/aboutAmelia"
+        android:textSize="17dp"
+        android:textColor="@color/dark_gray"
+        />
+
+    <ImageView
+        android:id="@+id/ivMargaret"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/margaret"
+        android:contentDescription="@string/margaret"
+        android:layout_below="@id/ivAmelia"
+        android:onClick="IvMargaretClick"/>/>
+
+    <TextView
+        android:id="@+id/tvMargaretHamilton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAmelia"
+        android:layout_toRightOf="@id/ivMargaret"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/margaret"
+        android:textSize="20dp"
+        android:textColor="@color/babypink"
+        />
+
+    <TextView
+        android:id="@+id/tvDatesMargaret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMargaretHamilton"
+        android:layout_toRightOf="@id/ivMargaret"
+        android:layout_marginLeft="10dp"
+        android:text="@string/datesMargaret"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvaboutMargaret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDatesMargaret"
+        android:layout_toRightOf="@id/ivMargaret"
+        android:layout_marginLeft="10dp"
+        android:text="@string/aboutMargaret"
+        android:textSize="17dp"
+        android:textColor="@color/dark_gray"
+        />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMargaret"
+        android:layout_marginTop="10dp"
+        android:hint="Enter new description"
+        android:textColor="@color/very_light_gray"/>
+
+    <Button
+        android:id="@+id/btnEditDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDescription"
+        android:text="Edit description"
+        android:backgroundTint="@color/babypink"
+        android:textColor="@color/dark_gray"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnEditDescription">
+        <RadioButton
+            android:id="@+id/rbMarie"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marie"
+            android:onClick="rbCheck"/>
+        <RadioButton
+            android:id="@+id/rbAmelia"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amelia"
+            android:onClick="rbCheck"/>
+        <RadioButton
+            android:id="@+id/rbMargaret"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/margaret"
+            android:onClick="rbCheck"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/myid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="5dp"
+        android:text="made by Amela Vorgic"
+        android:textAlignment="center"
+        android:textColor="@color/babypink"/>
+
+
+
+</RelativeLayout>
