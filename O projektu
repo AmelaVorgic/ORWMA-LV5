@@ -1,0 +1,11 @@
+about activity_main.xml
+
+Aplikaciju sam tijekom izrade pokretala na emulatoru Pixel3A, a nakon što sam ju završila pokrenula sam je na svom uređaju. 
+Kako je moj uređaj nešto drugačijeg omjera zaslona(Galaxy S10), u donjem dijelu zaslona bilo je malo praznog mjesta pa sam
+posljednji TextView "myid" dodala kao dopunu, ali i svojevrsnu autentifikaciju ovog projekta.
+
+about MainActivity.java
+
+U zadatku nije objašnjeno treba li se novi opis dodati postojećem ili ga zamijeniti pa se u mom programu
+on dodaje, ali ukoliko je potrebno da se on u potpunosti promijeni to bih jednostavno učinila tako da u 
+SetText() predam samo "addition" u koji sam spremila tekst koji se povukao sa EditText etDescription konzole.
